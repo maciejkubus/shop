@@ -1,0 +1,40 @@
+
+html,
+body {
+	@apply h-full;
+}
+
+body {
+	@apply relative;
+}
+
+a {
+	@apply 
+		relative
+		text-primary-500;
+}
+
+a::before {
+	@apply 
+		content-['']
+		absolute 
+		-bottom-1 
+		left-1/2 
+		-translate-x-1/2 
+		w-0 
+		hover:w-1/2 
+		xl:hover:w-3/4 
+		h-0.5 
+		rounded 
+		transition-all 
+		duration-300 
+		ease-in-out 
+		pointer-events-none 
+		bg-primary-500;
+}
+
+a:hover::before {
+	@apply 
+		w-1/2 
+		xl:w-3/4;
+}
