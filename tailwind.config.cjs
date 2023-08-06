@@ -13,6 +13,13 @@ module.exports = {
 			},
 			maxWidth: {
 				'site': 'var(--site-width)'
+			},
+			colors: {
+				'spotify': '#1FDF64',
+				'soundcloud': '#FF5500',
+				'youtube': '#FF0000',
+				'facebook': '#3B5998',
+				'instagram': '#E1306C',
 			}
 		},
 	},

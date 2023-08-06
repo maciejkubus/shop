@@ -2,6 +2,7 @@
 	import '../style/theme.postcss';
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../style/app.postcss';
+	import '@fortawesome/fontawesome-free/js/all.js';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import Header from '$lib/components/Header.svelte';
 	import { config } from '$lib/config';
@@ -26,6 +27,18 @@
 					<li><a href="/" class="text-white before:bg-white">Contact</a></li>
 				</ul>
 			</nav>
+			<ul slot="actions" class="flex gap-4 text-2xl">
+				<li>
+					<a href="/" class="text-white hover:text-instagram"><i class="fab fa-instagram" /></a>
+				</li>
+				<li>
+					<a href="/" class="text-white hover:text-facebook"><i class="fab fa-facebook-square" /></a
+					>
+				</li>
+				<li>
+					<a href="/" class="text-white hover:text-youtube"><i class="fab fa-youtube" /></a>
+				</li>
+			</ul>
 		</Header>
 	</svelte:fragment>
 	<slot />
