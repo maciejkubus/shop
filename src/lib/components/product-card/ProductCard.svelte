@@ -3,16 +3,19 @@
 	export let header = '';
 	export let content = '';
 	export let footer = '';
+	export let href: string;
 </script>
 
-<div
-	class="w-full h-full relative flex-1 flex flex-col overflow-hidden rounded-lg shadow-md
+<a
+	class="w-full h-full relative flex-1 flex flex-col overflow-hidden rounded-lg shadow-md group cursor-pointer text-tertiary-500 hover:shadow-lg transition-shadow duration-300 ease-in-out
   {$$slots.background ? '' : 'variant-filled-primary'} 
   {card}"
+	{href}
+	{...$$restProps}
 >
 	{#if $$slots.background}
 		<div
-			class="absolute -z-10 inset-0 flex after:content-[''] after:absolute after:inset-0 after:bg-surface-500 after:opacity-60"
+			class="absolute -z-10 inset-0 flex after:content-[''] after:absolute after:inset-0 after:bg-surface-500 after:opacity-60 group-hover:scale-110 transition-transform duration-300 ease-in-out"
 		>
 			<slot name="background" />
 		</div>
@@ -30,4 +33,4 @@
 			<slot name="footer" />
 		</footer>
 	{/if}
-</div>
+</a>

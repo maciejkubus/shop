@@ -5,7 +5,7 @@
 <div class="max-w-site w-full h-full mx-auto">
 	<div class="flex gap-4">
 		<div class="w-1/3">
-			<ProductCard card="aspect-square bg-transparent">
+			<ProductCard card="aspect-square bg-transparent" href="#">
 				<img slot="background" src="/images/headphones.jpg" alt="headphones" />
 				<div slot="header" class="text-xl font-bold drop-shadow-xl">Today's deal</div>
 				<div class="w-full h-full flex justify-end items-end text-8xl font-bold drop-shadow-xl">
