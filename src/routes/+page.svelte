@@ -75,20 +75,21 @@
 			</div>
 		</Splide>
 	</div>
-	<div class="flex gap-4">
-		<div class="w-1/3">
-			<ProductCard card="aspect-square bg-transparent" href="#">
-				<img slot="background" src="/images/headphones.jpg" alt="headphones" />
-				<div slot="header" class="text-2xl font-bold drop-shadow-xl">Today's deal</div>
-				<div class="w-full h-full flex justify-end items-end text-8xl font-bold drop-shadow-xl">
-					$39
-				</div>
-				<div slot="footer" class="text-right text-4xl drop-shadow-xl font-heading-token">
-					Headphones
-				</div>
+	<div class="flex gap-4 flex-col md:flex-row">
+		<div class="w-full md:w-1/3">
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/headphones.jpg"
+					alt="headphones"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Today's deal</div>
+				<div class="w-full h-full flex justify-end items-end">$39</div>
+				<div slot="footer" class="text-right">Headphones</div>
 			</ProductCard>
 		</div>
-		<div class="w-2/3 bg-secondary">
+		<div class="w-full md:w-2/3 bg-secondary">
 			<ProductCard card="bg-transparent" href="#">
 				<img
 					slot="background"
@@ -96,13 +97,9 @@
 					alt="headphones"
 					class="w-full h-full object-cover"
 				/>
-				<div slot="header" class="text-2xl font-bold drop-shadow-xl">Summer sale</div>
-				<div class="w-full h-full flex justify-end items-end text-8xl font-bold drop-shadow-xl">
-					$1999
-				</div>
-				<div slot="footer" class="text-right text-4xl drop-shadow-xl font-heading-token">
-					Laptops
-				</div>
+				<div slot="header">Summer sale</div>
+				<div class="w-full h-full flex justify-end items-end">$1999</div>
+				<div slot="footer" class="text-right">Laptops</div>
 			</ProductCard>
 		</div>
 	</div>

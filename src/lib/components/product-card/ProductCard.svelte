@@ -21,15 +21,15 @@
 		</div>
 	{/if}
 	{#if $$slots.header}
-		<header class="px-4 pt-4 {header}">
+		<header class="px-4 pt-4 text-2xl font-bold drop-shadow-xl {header}">
 			<slot name="header" />
 		</header>
 	{/if}
-	<section class="p-4 flex-1 {content}">
+	<section class="p-4 flex-1 text-6xl md:text-8xl font-bold drop-shadow-xl {content}">
 		<slot />
 	</section>
 	{#if $$slots.footer}
-		<footer class="px-4 pb-4 {footer}">
+		<footer class="px-4 pb-4 text-4xl drop-shadow-xl font-heading-token {footer}">
 			<slot name="footer" />
 		</footer>
 	{/if}
