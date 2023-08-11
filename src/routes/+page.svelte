@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProductCard from '$lib/components/ProductCard.svelte';
+	import ProductCard from '$lib/components/product-card/ProductCard.svelte';
 </script>
 
 <div class="max-w-site w-full h-full mx-auto">
