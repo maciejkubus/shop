@@ -1,11 +1,12 @@
 <script lang="ts">
+	import Countdown from '$lib/components/countdown/Countdown.svelte';
 	import ProductCard from '$lib/components/product-card/ProductCard.svelte';
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 </script>
 
 <div class="max-w-site w-full h-full mx-auto flex flex-col gap-8">
 	<div class="flex gap-4 w-full">
-		<Splide hasTrack={false} class="w-full flex rounded overflow-hidden bg-surface-500">
+		<Splide hasTrack={false} class="w-full flex rounded-lg overflow-hidden bg-surface-500">
 			<SplideTrack class="w-full">
 				<SplideSlide
 					class="w-full flex flex-col items-start gap-2 relative px-10 md:px-16 py-12 before:content-[''] before:absolute before:inset-0 before:opacity-40 before:bg-img-slider-1 before:bg-center before:bg-cover before:-z-10"
@@ -74,6 +75,18 @@
 				</button>
 			</div>
 		</Splide>
+	</div>
+	<div class="flex text-tertiary-500 items-center gap-4">
+		<div class="text-4xl drop-shadow-xl font-heading-token">Only available for:</div>
+		<div class="text-4xl flex justify-center items-center gap-0.5 font-bold">
+			<Countdown timeLeft={24 * 60 * 60 - 45} let:hours let:minutes let:seconds>
+				<div class="p-2 bg-primary-500 rounded">{hours}</div>
+				<div class="">:</div>
+				<div class="p-2 bg-primary-500 rounded">{minutes}</div>
+				<div class="">:</div>
+				<div class="p-2 bg-primary-500 rounded">{seconds}</div>
+			</Countdown>
+		</div>
 	</div>
 	<div class="flex gap-4 flex-col md:flex-row">
 		<div class="w-full md:w-1/3">
