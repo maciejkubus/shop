@@ -3,6 +3,7 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../style/app.postcss';
 	import '@fortawesome/fontawesome-free/js/all.js';
+	import '@splidejs/svelte-splide/css/core';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import { config } from '$lib/config';
 	import Header from '$lib/components/header/Header.svelte';
@@ -54,7 +55,7 @@
 			</ul>
 		</Header>
 	</svelte:fragment>
-	<main class="h-full p-16">
+	<main class="h-full p-2 md:p-8 xl:p-16">
 		<slot />
 	</main>
 </AppShell>

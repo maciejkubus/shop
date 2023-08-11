@@ -20,6 +20,10 @@ module.exports = {
 				'youtube': '#FF0000',
 				'facebook': '#3B5998',
 				'instagram': '#E1306C',
+			},
+			backgroundImage: {
+				'img-slider-1': 'url(/images/slider1.jpg)',
+				'img-slider-2': 'url(/images/slider2.jpg)',
 			}
 		},
 	},
