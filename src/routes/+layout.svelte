@@ -5,11 +5,8 @@
 	import '@fortawesome/fontawesome-free/js/all.js';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import { config } from '$lib/config';
-	import { register } from 'swiper/element/bundle';
 	import Header from '$lib/components/header/Header.svelte';
 	import Logo from '$lib/components/logo/Logo.svelte';
-
-	register();
 </script>
 
 <AppShell regionPage="pt-16">
