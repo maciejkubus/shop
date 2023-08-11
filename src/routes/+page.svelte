@@ -1,21 +1,21 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
+	import ProductCard from '$lib/components/ProductCard.svelte';
+</script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li>
-				<code class="code">/src/routes/+layout.svelte</code> - barebones layout, the CSS import order
-				is critical!
-			</li>
-			<li>
-				<code class="code">/src/app.postcss</code> - minimal css to make the page full screen, may not
-				be relevant for your project
-			</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
+<div class="max-w-site w-full h-full mx-auto">
+	<div class="flex gap-4">
+		<div class="w-1/3">
+			<ProductCard card="aspect-square bg-transparent">
+				<img slot="background" src="/images/headphones.jpg" alt="headphones" />
+				<div slot="header" class="text-xl font-bold drop-shadow-xl">Today's deal</div>
+				<div class="w-full h-full flex justify-end items-end text-8xl font-bold drop-shadow-xl">
+					$39
+				</div>
+				<div slot="footer" class="text-right text-4xl drop-shadow-xl font-heading-token">
+					Headphones
+				</div>
+			</ProductCard>
+		</div>
+		<div class="w-2/3 bg-secondary">2</div>
 	</div>
 </div>

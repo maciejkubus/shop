@@ -9,37 +9,50 @@
 	import Logo from '$lib/components/Logo.svelte';
 </script>
 
-<AppShell>
+<AppShell regionPage="pt-16">
 	<svelte:fragment slot="header">
 		<Header>
 			<a slot="image" class="contents" href="/">
 				<Logo />
 			</a>
-			<a slot="title" class="text-white before:bg-white" href="/">
+			<a slot="title" class="text-tertiary-500 before:bg-tertiary-500" href="/">
 				{config.siteName}
 			</a>
 			<nav slot="menu" class="w-full flex justify-center items-center">
 				<ul class="flex gap-4 text-xl">
-					<li><a href="/" class="text-white before:bg-white">Home</a></li>
-					<li><a href="/" class="text-white before:bg-white">Products</a></li>
-					<li><a href="/" class="text-white before:bg-white whitespace-nowrap">Buy again</a></li>
-					<li><a href="/" class="text-white before:bg-white whitespace-nowrap">Gift cards</a></li>
-					<li><a href="/" class="text-white before:bg-white">Contact</a></li>
+					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500">Home</a></li>
+					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500">Products</a></li>
+					<li>
+						<a href="/" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap"
+							>Buy again</a
+						>
+					</li>
+					<li>
+						<a href="/" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap"
+							>Gift cards</a
+						>
+					</li>
+					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500">Contact</a></li>
 				</ul>
 			</nav>
 			<ul slot="actions" class="flex gap-4 text-2xl">
 				<li>
-					<a href="/" class="text-white hover:text-instagram"><i class="fab fa-instagram" /></a>
-				</li>
-				<li>
-					<a href="/" class="text-white hover:text-facebook"><i class="fab fa-facebook-square" /></a
+					<a href="/" class="text-tertiary-500 hover:text-instagram"
+						><i class="fab fa-instagram" /></a
 					>
 				</li>
 				<li>
-					<a href="/" class="text-white hover:text-youtube"><i class="fab fa-youtube" /></a>
+					<a href="/" class="text-tertiary-500 hover:text-facebook"
+						><i class="fab fa-facebook-square" /></a
+					>
+				</li>
+				<li>
+					<a href="/" class="text-tertiary-500 hover:text-youtube"><i class="fab fa-youtube" /></a>
 				</li>
 			</ul>
 		</Header>
 	</svelte:fragment>
-	<slot />
+	<main class="h-full p-16">
+		<slot />
+	</main>
 </AppShell>
