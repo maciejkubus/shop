@@ -177,4 +177,23 @@
 			<div slot="footer" class="text-right">Blue Computer</div>
 		</ProductCard>
 	</div>
+	<div
+		class="w-full rounded px-8 py-4 flex justify-center items-center md:justify-between gap-4 flex-col md:flex-row variant-filled-primary text-3xl md:text-2xl font-bold text-center"
+	>
+		<div>
+			Get 40% for all products with code <span class="text-secondary-500">SUMMER</span>
+		</div>
+		<div class="w-full md:w-auto">
+			<button
+				class="btn variant-filled-secondary flex justify-between group md:text-lg w-full md:w-auto"
+			>
+				Get Code
+				<div
+					class="ml-4 flex justify-center items-center variant-filled-surface p-1 rounded-full h-6 w-6 group-hover:translate-x-1 transition-all duration-200 ease-in-out"
+				>
+					<i class="fas fa-chevron-right" />
+				</div>
+			</button>
+		</div>
+	</div>
 </div>
