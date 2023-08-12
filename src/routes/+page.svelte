@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Countdown from '$lib/components/countdown/Countdown.svelte';
+	import Newsletter from '$lib/components/newsletter/Newsletter.svelte';
 	import ProductCard from '$lib/components/product-card/ProductCard.svelte';
 	import ProductTile from '$lib/components/product-tile/ProductTile.svelte';
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
@@ -323,5 +324,14 @@
 			<div class="w-full h-full flex justify-end items-end">$599</div>
 			<div slot="footer" class="text-right">Blue PC</div>
 		</ProductCard>
+	</div>
+	<div class="w-full">
+		<Newsletter>
+			<div class="text-2xl font-bold font-heading-token">Follow us no matter what</div>
+			<div class="text-lg leading-snug pt-4">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsa doloribus dolore
+				impedit omnis sapiente in reiciendis harum eum dolorem fugiat, eius sit.
+			</div>
+		</Newsletter>
 	</div>
 </div>

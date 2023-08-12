@@ -17,6 +17,7 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
 		"@tailwindcss/forms": "^0.5.4",
+		"@types/nodemailer": "^6.4.9",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.14",
@@ -36,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.4.2",
-		"@splidejs/svelte-splide": "^0.2.9"
+		"@splidejs/svelte-splide": "^0.2.9",
+		"nodemailer": "^6.9.4"
 	}
 }
