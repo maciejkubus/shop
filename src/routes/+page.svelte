@@ -94,7 +94,7 @@
 		product={{
 			name: 'Fancy chair',
 			price: '$189',
-			url: '/images/chair.jpg',
+			url: '/product',
 			image: '/images/chair.jpg'
 		}}
 		class="text-tertiary-500 no-anim"
@@ -103,7 +103,7 @@
 		product={{
 			name: 'Elegant lamp',
 			price: '$299',
-			url: '/images/lamp.jpg',
+			url: '/product',
 			image: '/images/lamp.jpg'
 		}}
 		class="text-tertiary-500 no-anim"
@@ -112,7 +112,7 @@
 		product={{
 			name: 'Lantern',
 			price: '$99',
-			url: '/images/lantern.jpg',
+			url: '/product',
 			image: '/images/lantern.jpg'
 		}}
 		class="text-tertiary-500 no-anim"
@@ -121,7 +121,7 @@
 		product={{
 			name: 'Simple clock',
 			price: '$19',
-			url: '/images/clock.jpg',
+			url: '/product',
 			image: '/images/clock.jpg'
 		}}
 		class="text-tertiary-500 no-anim"
