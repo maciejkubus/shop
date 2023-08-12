@@ -57,7 +57,9 @@
 		</Header>
 	</svelte:fragment>
 	<main class="h-full p-2 md:p-8 xl:p-16">
-		<slot />
+		<div class="max-w-site w-full h-full mx-auto flex flex-col gap-16">
+			<slot />
+		</div>
 	</main>
 	<svelte:fragment slot="pageFooter">
 		<Footer>
