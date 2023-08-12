@@ -177,26 +177,7 @@
 			<div slot="footer" class="text-right">Blue Computer</div>
 		</ProductCard>
 	</div>
-	<div
-		class="w-full rounded px-8 py-4 flex justify-center items-center md:justify-between gap-4 flex-col md:flex-row variant-filled-primary text-3xl md:text-2xl font-bold text-center"
-	>
-		<div>
-			Get 40% for all products with code <span class="text-secondary-500">SUMMER</span>
-		</div>
-		<div class="w-full md:w-auto">
-			<button
-				class="btn variant-filled-secondary flex justify-between group md:text-lg w-full md:w-auto"
-			>
-				Get Code
-				<div
-					class="ml-4 flex justify-center items-center variant-filled-surface p-1 rounded-full h-6 w-6 group-hover:translate-x-1 transition-all duration-200 ease-in-out"
-				>
-					<i class="fas fa-chevron-right" />
-				</div>
-			</button>
-		</div>
-	</div>
-	<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+	<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 py-8">
 		<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
 			<div class="text-9xl">
 				<i class="fas fa-globe" />
@@ -225,5 +206,122 @@
 			<div class="text-3xl font-heading-token pt-6 pb-1">Payments</div>
 			<div class="text-tertiary-600">Flexible payment made easy.</div>
 		</div>
+	</div>
+	<div class="flex gap-8 flex-col md:flex-row">
+		<div class="w-full md:w-2/3 bg-secondary">
+			<ProductCard card="bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/gift-1.jpg"
+					alt="gift 1"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Gifting day</div>
+				<div class="w-full h-full flex justify-end items-end">$499</div>
+				<div slot="footer" class="text-right">Package</div>
+			</ProductCard>
+		</div>
+		<div class="w-full md:w-1/3 flex flex-col gap-8">
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/gift-2.jpg"
+					alt="gift 2"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">New Year's Eve</div>
+				<div class="w-full h-full flex justify-end items-end">$2023</div>
+				<div slot="footer" class="text-right">Year-package</div>
+			</ProductCard>
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/gift-3.jpg"
+					alt="gif 3"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Christmas</div>
+				<div class="w-full h-full flex justify-end items-end">$99</div>
+				<div slot="footer" class="text-right">Just gift</div>
+			</ProductCard>
+		</div>
+	</div>
+	<div
+		class="w-full rounded px-8 py-4 flex justify-center items-center md:justify-between gap-4 flex-col md:flex-row variant-filled-primary text-3xl md:text-2xl font-bold text-center"
+	>
+		<div>
+			Get 40% for all products with code <span class="text-secondary-500">SUMMER</span>
+		</div>
+		<div class="w-full md:w-auto">
+			<button
+				class="btn variant-filled-secondary flex justify-between group md:text-lg w-full md:w-auto"
+			>
+				Get Code
+				<div
+					class="ml-4 flex justify-center items-center variant-filled-surface p-1 rounded-full h-6 w-6 group-hover:translate-x-1 transition-all duration-200 ease-in-out"
+				>
+					<i class="fas fa-chevron-right" />
+				</div>
+			</button>
+		</div>
+	</div>
+	<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img
+				slot="background"
+				src="/images/laptops.jpg"
+				alt="laptops"
+				class="w-full h-full object-cover"
+			/>
+			<div slot="header">Promotion</div>
+			<div class="w-full h-full flex justify-end items-end">$299</div>
+			<div slot="footer" class="text-right">Laptops</div>
+		</ProductCard>
+
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img
+				slot="background"
+				src="/images/headphones.jpg"
+				alt="headphones"
+				class="w-full h-full object-cover"
+			/>
+			<div slot="header">Promotion</div>
+			<div class="w-full h-full flex justify-end items-end">$18</div>
+			<div slot="footer" class="text-right">Headphones</div>
+		</ProductCard>
+
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img
+				slot="background"
+				src="/images/slider1.jpg"
+				alt="slider-1"
+				class="w-full h-full object-cover"
+			/>
+			<div slot="header">Promotion</div>
+			<div class="w-full h-full flex justify-end items-end">$200</div>
+			<div slot="footer" class="text-right">Technology</div>
+		</ProductCard>
+	</div>
+	<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img slot="background" src="/images/pc-1.jpg" alt="pc-1" class="w-full h-full object-cover" />
+			<div slot="header">Promotion</div>
+			<div class="w-full h-full flex justify-end items-end">$399</div>
+			<div slot="footer" class="text-right">Red PC</div>
+		</ProductCard>
+
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img slot="background" src="/images/pc-2.jpg" alt="pc-2" class="w-full h-full object-cover" />
+			<div slot="header">Promotion</div>
+			<div class="w-full h-full flex justify-end items-end">$499</div>
+			<div slot="footer" class="text-right">Green PC</div>
+		</ProductCard>
+
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img slot="background" src="/images/pc-2.jpg" alt="pc-3" class="w-full h-full object-cover" />
+			<div slot="header">PromotionC</div>
+			<div class="w-full h-full flex justify-end items-end">$599</div>
+			<div slot="footer" class="text-right">Blue PC</div>
+		</ProductCard>
 	</div>
 </div>
