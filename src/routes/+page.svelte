@@ -5,7 +5,7 @@
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 </script>
 
-<div class="max-w-site w-full h-full mx-auto flex flex-col gap-16">
+<div class="max-w-site w-full h-full mx-auto flex flex-col gap-8">
 	<div class="flex gap-4 w-full">
 		<Splide hasTrack={false} class="w-full flex rounded-lg overflow-hidden bg-surface-500">
 			<SplideTrack class="w-full">
@@ -89,7 +89,7 @@
 			</Countdown>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+	<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
 		<ProductTile
 			product={{
 				name: 'Fancy chair',
@@ -154,5 +154,27 @@
 				<div slot="footer" class="text-right">Laptops</div>
 			</ProductCard>
 		</div>
+	</div>
+	<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img slot="background" src="/images/pc-1.jpg" alt="pc-1" class="w-full h-full object-cover" />
+			<div slot="header">Red PC</div>
+			<div class="w-full h-full flex justify-end items-end">$877</div>
+			<div slot="footer" class="text-right">Red Computer</div>
+		</ProductCard>
+
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img slot="background" src="/images/pc-2.jpg" alt="pc-2" class="w-full h-full object-cover" />
+			<div slot="header">Green PC</div>
+			<div class="w-full h-full flex justify-end items-end">$255</div>
+			<div slot="footer" class="text-right">Green Computer</div>
+		</ProductCard>
+
+		<ProductCard card="md:aspect-square bg-transparent" href="#">
+			<img slot="background" src="/images/pc-2.jpg" alt="pc-3" class="w-full h-full object-cover" />
+			<div slot="header">Blue PC</div>
+			<div class="w-full h-full flex justify-end items-end">$439</div>
+			<div slot="footer" class="text-right">Blue Computer</div>
+		</ProductCard>
 	</div>
 </div>
