@@ -196,4 +196,34 @@
 			</button>
 		</div>
 	</div>
+	<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+		<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+			<div class="text-9xl">
+				<i class="fas fa-globe" />
+			</div>
+			<div class="text-3xl font-heading-token pt-6 pb-1">Worldwide</div>
+			<div class="text-tertiary-600">Get free shipping over $65.</div>
+		</div>
+		<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+			<div class="text-9xl">
+				<i class="fas fa-box-open" />
+			</div>
+			<div class="text-3xl font-heading-token pt-6 pb-1">Returns</div>
+			<div class="text-tertiary-600">Within 30 days for an exchange.</div>
+		</div>
+		<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+			<div class="text-9xl">
+				<i class="fas fa-life-ring" />
+			</div>
+			<div class="text-3xl font-heading-token pt-6 pb-1">Support</div>
+			<div class="text-tertiary-600">Top notch customer service.</div>
+		</div>
+		<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+			<div class="text-9xl">
+				<i class="fas fa-credit-card" />
+			</div>
+			<div class="text-3xl font-heading-token pt-6 pb-1">Payments</div>
+			<div class="text-tertiary-600">Flexible payment made easy.</div>
+		</div>
+	</div>
 </div>
