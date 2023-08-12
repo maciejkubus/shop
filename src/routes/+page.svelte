@@ -1,10 +1,11 @@
 <script lang="ts">
 	import Countdown from '$lib/components/countdown/Countdown.svelte';
 	import ProductCard from '$lib/components/product-card/ProductCard.svelte';
+	import ProductTile from '$lib/components/product-tile/ProductTile.svelte';
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 </script>
 
-<div class="max-w-site w-full h-full mx-auto flex flex-col gap-8">
+<div class="max-w-site w-full h-full mx-auto flex flex-col gap-16">
 	<div class="flex gap-4 w-full">
 		<Splide hasTrack={false} class="w-full flex rounded-lg overflow-hidden bg-surface-500">
 			<SplideTrack class="w-full">
@@ -88,7 +89,45 @@
 			</Countdown>
 		</div>
 	</div>
-	<div class="flex gap-4 flex-col md:flex-row">
+	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+		<ProductTile
+			product={{
+				name: 'Fancy chair',
+				price: '$189',
+				url: '/images/chair.jpg',
+				image: '/images/chair.jpg'
+			}}
+			class="text-tertiary-500 no-anim"
+		/>
+		<ProductTile
+			product={{
+				name: 'Elegant lamp',
+				price: '$299',
+				url: '/images/lamp.jpg',
+				image: '/images/lamp.jpg'
+			}}
+			class="text-tertiary-500 no-anim"
+		/>
+		<ProductTile
+			product={{
+				name: 'Lantern',
+				price: '$99',
+				url: '/images/lantern.jpg',
+				image: '/images/lantern.jpg'
+			}}
+			class="text-tertiary-500 no-anim"
+		/>
+		<ProductTile
+			product={{
+				name: 'Simple clock',
+				price: '$19',
+				url: '/images/clock.jpg',
+				image: '/images/clock.jpg'
+			}}
+			class="text-tertiary-500 no-anim"
+		/>
+	</div>
+	<div class="flex gap-8 flex-col md:flex-row">
 		<div class="w-full md:w-1/3">
 			<ProductCard card="md:aspect-square bg-transparent" href="#">
 				<img

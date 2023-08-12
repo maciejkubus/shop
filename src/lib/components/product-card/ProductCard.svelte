@@ -15,7 +15,7 @@
 >
 	{#if $$slots.background}
 		<div
-			class="absolute -z-10 inset-0 flex after:content-[''] after:absolute after:inset-0 after:bg-surface-500 after:opacity-60 group-hover:scale-110 transition-transform duration-300 ease-in-out"
+			class="absolute -z-10 inset-0 flex after:content-[''] after:absolute after:inset-0 after:bg-surface-500 after:opacity-60 group-hover:scale-105 transition-transform duration-300 ease-in-out"
 		>
 			<slot name="background" />
 		</div>
