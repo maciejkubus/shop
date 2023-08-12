@@ -6,7 +6,7 @@
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 </script>
 
-<div class="max-w-site w-full h-full mx-auto flex flex-col gap-8">
+<div class="max-w-site w-full h-full mx-auto flex flex-col gap-16">
 	<div class="flex gap-4 w-full">
 		<Splide hasTrack={false} class="w-full flex rounded-lg overflow-hidden bg-surface-500">
 			<SplideTrack class="w-full">
@@ -128,55 +128,70 @@
 			class="text-tertiary-500 no-anim"
 		/>
 	</div>
-	<div class="flex gap-8 flex-col md:flex-row">
-		<div class="w-full md:w-1/3">
+	<div class="flex flex-col gap-8">
+		<div class="flex gap-8 flex-col md:flex-row">
+			<div class="w-full md:w-1/3">
+				<ProductCard card="md:aspect-square bg-transparent" href="#">
+					<img
+						slot="background"
+						src="/images/headphones.jpg"
+						alt="headphones"
+						class="w-full h-full object-cover"
+					/>
+					<div slot="header">Today's deal</div>
+					<div class="w-full h-full flex justify-end items-end">$39</div>
+					<div slot="footer" class="text-right">Headphones</div>
+				</ProductCard>
+			</div>
+			<div class="w-full md:w-2/3 bg-secondary">
+				<ProductCard card="bg-transparent" href="#">
+					<img
+						slot="background"
+						src="/images/laptops.jpg"
+						alt="headphones"
+						class="w-full h-full object-cover"
+					/>
+					<div slot="header">Summer sale</div>
+					<div class="w-full h-full flex justify-end items-end">$1999</div>
+					<div slot="footer" class="text-right">Laptops</div>
+				</ProductCard>
+			</div>
+		</div>
+		<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
 			<ProductCard card="md:aspect-square bg-transparent" href="#">
 				<img
 					slot="background"
-					src="/images/headphones.jpg"
-					alt="headphones"
+					src="/images/pc-1.jpg"
+					alt="pc-1"
 					class="w-full h-full object-cover"
 				/>
-				<div slot="header">Today's deal</div>
-				<div class="w-full h-full flex justify-end items-end">$39</div>
-				<div slot="footer" class="text-right">Headphones</div>
+				<div slot="header">Red PC</div>
+				<div class="w-full h-full flex justify-end items-end">$877</div>
+				<div slot="footer" class="text-right">Red Computer</div>
 			</ProductCard>
-		</div>
-		<div class="w-full md:w-2/3 bg-secondary">
-			<ProductCard card="bg-transparent" href="#">
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
 				<img
 					slot="background"
-					src="/images/laptops.jpg"
-					alt="headphones"
+					src="/images/pc-2.jpg"
+					alt="pc-2"
 					class="w-full h-full object-cover"
 				/>
-				<div slot="header">Summer sale</div>
-				<div class="w-full h-full flex justify-end items-end">$1999</div>
-				<div slot="footer" class="text-right">Laptops</div>
+				<div slot="header">Green PC</div>
+				<div class="w-full h-full flex justify-end items-end">$255</div>
+				<div slot="footer" class="text-right">Green Computer</div>
+			</ProductCard>
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/pc-2.jpg"
+					alt="pc-3"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Blue PC</div>
+				<div class="w-full h-full flex justify-end items-end">$439</div>
+				<div slot="footer" class="text-right">Blue Computer</div>
 			</ProductCard>
 		</div>
-	</div>
-	<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img slot="background" src="/images/pc-1.jpg" alt="pc-1" class="w-full h-full object-cover" />
-			<div slot="header">Red PC</div>
-			<div class="w-full h-full flex justify-end items-end">$877</div>
-			<div slot="footer" class="text-right">Red Computer</div>
-		</ProductCard>
-
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img slot="background" src="/images/pc-2.jpg" alt="pc-2" class="w-full h-full object-cover" />
-			<div slot="header">Green PC</div>
-			<div class="w-full h-full flex justify-end items-end">$255</div>
-			<div slot="footer" class="text-right">Green Computer</div>
-		</ProductCard>
-
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img slot="background" src="/images/pc-2.jpg" alt="pc-3" class="w-full h-full object-cover" />
-			<div slot="header">Blue PC</div>
-			<div class="w-full h-full flex justify-end items-end">$439</div>
-			<div slot="footer" class="text-right">Blue Computer</div>
-		</ProductCard>
 	</div>
 	<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 py-8">
 		<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
@@ -266,64 +281,81 @@
 			</button>
 		</div>
 	</div>
-	<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img
-				slot="background"
-				src="/images/laptops.jpg"
-				alt="laptops"
-				class="w-full h-full object-cover"
-			/>
-			<div slot="header">Promotion</div>
-			<div class="w-full h-full flex justify-end items-end">$299</div>
-			<div slot="footer" class="text-right">Laptops</div>
-		</ProductCard>
+	<div class="flex flex-col gap-8">
+		<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/laptops.jpg"
+					alt="laptops"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Promotion</div>
+				<div class="w-full h-full flex justify-end items-end">$299</div>
+				<div slot="footer" class="text-right">Laptops</div>
+			</ProductCard>
 
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img
-				slot="background"
-				src="/images/headphones.jpg"
-				alt="headphones"
-				class="w-full h-full object-cover"
-			/>
-			<div slot="header">Promotion</div>
-			<div class="w-full h-full flex justify-end items-end">$18</div>
-			<div slot="footer" class="text-right">Headphones</div>
-		</ProductCard>
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/headphones.jpg"
+					alt="headphones"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Promotion</div>
+				<div class="w-full h-full flex justify-end items-end">$18</div>
+				<div slot="footer" class="text-right">Headphones</div>
+			</ProductCard>
 
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img
-				slot="background"
-				src="/images/slider1.jpg"
-				alt="slider-1"
-				class="w-full h-full object-cover"
-			/>
-			<div slot="header">Promotion</div>
-			<div class="w-full h-full flex justify-end items-end">$200</div>
-			<div slot="footer" class="text-right">Technology</div>
-		</ProductCard>
-	</div>
-	<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img slot="background" src="/images/pc-1.jpg" alt="pc-1" class="w-full h-full object-cover" />
-			<div slot="header">Promotion</div>
-			<div class="w-full h-full flex justify-end items-end">$399</div>
-			<div slot="footer" class="text-right">Red PC</div>
-		</ProductCard>
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/slider1.jpg"
+					alt="slider-1"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Promotion</div>
+				<div class="w-full h-full flex justify-end items-end">$200</div>
+				<div slot="footer" class="text-right">Technology</div>
+			</ProductCard>
+		</div>
+		<div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/pc-1.jpg"
+					alt="pc-1"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Promotion</div>
+				<div class="w-full h-full flex justify-end items-end">$399</div>
+				<div slot="footer" class="text-right">Red PC</div>
+			</ProductCard>
 
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img slot="background" src="/images/pc-2.jpg" alt="pc-2" class="w-full h-full object-cover" />
-			<div slot="header">Promotion</div>
-			<div class="w-full h-full flex justify-end items-end">$499</div>
-			<div slot="footer" class="text-right">Green PC</div>
-		</ProductCard>
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/pc-2.jpg"
+					alt="pc-2"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">Promotion</div>
+				<div class="w-full h-full flex justify-end items-end">$499</div>
+				<div slot="footer" class="text-right">Green PC</div>
+			</ProductCard>
 
-		<ProductCard card="md:aspect-square bg-transparent" href="#">
-			<img slot="background" src="/images/pc-2.jpg" alt="pc-3" class="w-full h-full object-cover" />
-			<div slot="header">PromotionC</div>
-			<div class="w-full h-full flex justify-end items-end">$599</div>
-			<div slot="footer" class="text-right">Blue PC</div>
-		</ProductCard>
+			<ProductCard card="md:aspect-square bg-transparent" href="#">
+				<img
+					slot="background"
+					src="/images/pc-2.jpg"
+					alt="pc-3"
+					class="w-full h-full object-cover"
+				/>
+				<div slot="header">PromotionC</div>
+				<div class="w-full h-full flex justify-end items-end">$599</div>
+				<div slot="footer" class="text-right">Blue PC</div>
+			</ProductCard>
+		</div>
 	</div>
 	<div class="w-full">
 		<Newsletter>
