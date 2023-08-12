@@ -16,11 +16,11 @@
 
 <div class="flex flex-col md:flex-row gap-4">
 	<div class="w-full">
-		<img src={activeImage} alt="Product" class="object-cover h-full" />
+		<img src={activeImage} alt="Product" class="object-cover h-full aspect-square" />
 	</div>
 	<div>
-		<div class="w-32 flex flex-col gap-3">
-			{#each images.splice(0, 4) as image}
+		<div class="md:w-32 flex flex-row flex-wrap md:flex-col gap-3">
+			{#each images as image}
 				<div class="overflow-hidden w-24 h-24">
 					<img
 						src={image}
