@@ -29,27 +29,27 @@
 							Buy again
 						</a>
 					</li>
+					<li><a href="/contact" class="text-tertiary-500 before:bg-tertiary-500"> Contact </a></li>
 					<li>
 						<a href="/" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
-							Gift cards
+							Account
 						</a>
 					</li>
-					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500"> Contact </a></li>
 				</ul>
 			</nav>
 			<ul slot="actions" class="flex gap-4 text-2xl">
 				<li>
-					<a href="/" class="text-tertiary-500 hover:text-instagram">
+					<a href="/" class="text-tertiary-500 hover:text-instagram before:content-none">
 						<i class="fab fa-instagram" />
 					</a>
 				</li>
 				<li>
-					<a href="/" class="text-tertiary-500 hover:text-facebook">
+					<a href="/" class="text-tertiary-500 hover:text-facebook before:content-none">
 						<i class="fab fa-facebook-square" />
 					</a>
 				</li>
 				<li>
-					<a href="/" class="text-tertiary-500 hover:text-youtube">
+					<a href="/" class="text-tertiary-500 hover:text-youtube before:content-none">
 						<i class="fab fa-youtube" />
 					</a>
 				</li>
