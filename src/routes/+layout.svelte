@@ -23,7 +23,7 @@
 			<nav slot="menu" class="w-full flex justify-center items-center">
 				<ul class="flex gap-4 text-xl">
 					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500">Home</a></li>
-					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500">Products</a></li>
+					<li><a href="/products" class="text-tertiary-500 before:bg-tertiary-500">Products</a></li>
 					<li>
 						<a href="/" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
 							Buy again
