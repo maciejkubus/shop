@@ -320,7 +320,7 @@
 
 		<ProductCard card="md:aspect-square bg-transparent" href="#">
 			<img slot="background" src="/images/pc-2.jpg" alt="pc-3" class="w-full h-full object-cover" />
-			<div slot="header">PromotionC</div>
+			<div slot="header">Promotion</div>
 			<div class="w-full h-full flex justify-end items-end">$599</div>
 			<div slot="footer" class="text-right">Blue PC</div>
 		</ProductCard>
