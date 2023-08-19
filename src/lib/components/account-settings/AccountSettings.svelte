@@ -21,8 +21,8 @@
 </script>
 
 <div class="text-2xl md:text-6xl font-bold mb-8">Settings</div>
-<div class="max-w-sm space-y-2">
-	<form on:submit|preventDefault={submit}>
+<div class="max-w-sm">
+	<form on:submit|preventDefault={submit} class="space-y-2">
 		<div>
 			<div>Username:</div>
 			<div>
