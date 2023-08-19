@@ -5,12 +5,12 @@
 <div class="text-4xl md:text-6xl font-bold">Buy again</div>
 
 <div>
-	<div class="text-4xl md:text-6xl font-bold">Products</div>
+	<div class="text-2xl font-bold mb-4">09.07.2023</div>
 	<ProductDummyList lenght={3} />
 </div>
 
 <div>
-	<div class="text-2xl font-bold mb-4">09.07.2023</div>
+	<div class="text-2xl font-bold mb-4">01.07.2023</div>
 	<ProductDummyList lenght={2} />
 </div>
 
