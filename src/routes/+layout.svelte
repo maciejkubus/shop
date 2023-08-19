@@ -153,25 +153,25 @@
 				<div class="text-3xl font-heading-token font-bold">Quick</div>
 				<div class="text-lg flex flex-col justify-start items-start group gap-1">
 					<a
-						href="/"
+						href="/faq"
 						class="text-tertiary-600 before:bg-tertiary-500 flex gap-2 w-auto justify-center group-hover:text-tertiary-500"
 					>
 						<div>FAQ</div>
 					</a>
 					<a
-						href="/"
+						href="/privacy-policy"
 						class="text-tertiary-600 before:bg-tertiary-500 flex gap-2 w-auto justify-center group-hover:text-tertiary-500"
 					>
 						<div>Privacy Policy</div>
 					</a>
 					<a
-						href="/"
+						href="/refunds"
 						class="text-tertiary-600 before:bg-tertiary-500 flex gap-2 w-auto justify-center group-hover:text-tertiary-500"
 					>
 						<div>Refunds</div>
 					</a>
 					<a
-						href="/"
+						href="/legal-issues"
 						class="text-tertiary-600 before:bg-tertiary-500 flex gap-2 w-auto justify-center group-hover:text-tertiary-500"
 					>
 						<div>Legal issues</div>
