@@ -9,6 +9,14 @@
 	import Header from '$lib/components/header/Header.svelte';
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import Footer from '$lib/components/footer/Footer.svelte';
+	import { navigating } from '$app/stores';
+	import { scrollToTop } from '$lib/utils/scroll-to-top';
+
+	const onNavigating = () => {
+		scrollToTop();
+	};
+
+	$: if ($navigating) onNavigating();
 </script>
 
 <AppShell regionPage="pt-16">
