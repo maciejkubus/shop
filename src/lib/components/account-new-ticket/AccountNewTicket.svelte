@@ -27,7 +27,7 @@
 					id="subject"
 					name="subject"
 					placeholder="Subject"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={subject}
 					disabled={loading}
 				/>
@@ -40,7 +40,7 @@
 					id="message"
 					name="message"
 					placeholder="Message"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={message}
 					disabled={loading}
 					rows="8"

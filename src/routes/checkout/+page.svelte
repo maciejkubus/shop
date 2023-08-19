@@ -87,7 +87,7 @@
 						id="adress"
 						name="adress"
 						placeholder="Adress"
-						class="w-full p-2 rounded variant-filled-secondary"
+						class="w-full p-2 rounded variant-filled-tertiary"
 						bind:value={shipping.adress}
 						disabled={loading}
 					/>
@@ -101,7 +101,7 @@
 						id="adress2"
 						name="adress2"
 						placeholder="Adress 2"
-						class="w-full p-2 rounded variant-filled-secondary"
+						class="w-full p-2 rounded variant-filled-tertiary"
 						bind:value={shipping.adress2}
 						disabled={loading}
 					/>
@@ -115,7 +115,7 @@
 						id="city"
 						name="city"
 						placeholder="City"
-						class="w-full p-2 rounded variant-filled-secondary"
+						class="w-full p-2 rounded variant-filled-tertiary"
 						bind:value={shipping.city}
 						disabled={loading}
 					/>
@@ -129,7 +129,7 @@
 						id="postCode"
 						name="postCode"
 						placeholder="Post Code"
-						class="w-full p-2 rounded variant-filled-secondary"
+						class="w-full p-2 rounded variant-filled-tertiary"
 						bind:value={shipping.postCode}
 						disabled={loading}
 					/>
@@ -143,7 +143,7 @@
 						id="country"
 						name="country"
 						placeholder="Country"
-						class="w-full p-2 rounded variant-filled-secondary"
+						class="w-full p-2 rounded variant-filled-tertiary"
 						bind:value={shipping.country}
 						disabled={loading}
 					/>

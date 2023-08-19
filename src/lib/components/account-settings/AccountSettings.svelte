@@ -31,7 +31,7 @@
 					id="username"
 					name="username"
 					placeholder="Username"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={username}
 					disabled={loading}
 				/>
@@ -45,7 +45,7 @@
 					id="email"
 					name="email"
 					placeholder="E-mail"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={email}
 					disabled={loading}
 				/>
@@ -59,7 +59,7 @@
 					id="password"
 					name="password"
 					placeholder="Password"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={password}
 					disabled={loading}
 				/>
@@ -73,7 +73,7 @@
 					id="repeatPassword"
 					name="repeatPassword"
 					placeholder="Repeat Password"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={repeatPassword}
 					disabled={loading}
 				/>
@@ -87,7 +87,7 @@
 					id="phone"
 					name="phone"
 					placeholder="Phone"
-					class="w-full p-2 rounded variant-filled-secondary"
+					class="w-full p-2 rounded variant-filled-tertiary"
 					bind:value={phone}
 					disabled={loading}
 				/>
