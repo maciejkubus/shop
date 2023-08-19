@@ -25,7 +25,7 @@
 					<li><a href="/" class="text-tertiary-500 before:bg-tertiary-500">Home</a></li>
 					<li><a href="/products" class="text-tertiary-500 before:bg-tertiary-500">Products</a></li>
 					<li>
-						<a href="/" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
+						<a href="/buy-again" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
 							Buy again
 						</a>
 					</li>
