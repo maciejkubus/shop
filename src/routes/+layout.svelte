@@ -45,23 +45,12 @@
 					</li>
 				</ul>
 			</nav>
-			<ul slot="actions" class="flex gap-4 text-2xl">
-				<li>
-					<a href="/" class="text-tertiary-500 hover:text-instagram before:content-none">
-						<i class="fab fa-instagram" />
-					</a>
-				</li>
-				<li>
-					<a href="/" class="text-tertiary-500 hover:text-facebook before:content-none">
-						<i class="fab fa-facebook-square" />
-					</a>
-				</li>
-				<li>
-					<a href="/" class="text-tertiary-500 hover:text-youtube before:content-none">
-						<i class="fab fa-youtube" />
-					</a>
-				</li>
-			</ul>
+			<div slot="actions" class="text-lg">
+				<a href="/cart" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
+					<i class="fas fa-shopping-cart" />
+					Cart (4)
+				</a>
+			</div>
 		</Header>
 	</svelte:fragment>
 	<main class="h-full p-2 md:p-8 xl:p-16">

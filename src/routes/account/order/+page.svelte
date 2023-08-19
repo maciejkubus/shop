@@ -53,28 +53,28 @@
 			quantity: '4',
 			price: '$29',
 			total: '$116',
-			url: '<a href="/product" class="">View <i class="fas fa-external-link-alt"></i></a>'
+			url: '<a href="/product" class="text-tertiary-500">View <i class="fas fa-external-link-alt"></i></a>'
 		},
 		{
 			name: 'Elegant table',
 			quantity: '1',
 			price: '$49',
 			total: '$49',
-			url: '<a href="/product" class="">View <i class="fas fa-external-link-alt"></i></a>'
+			url: '<a href="/product" class="text-tertiary-500">View <i class="fas fa-external-link-alt"></i></a>'
 		},
 		{
 			name: 'Headphones',
 			quantity: '1',
 			price: '$19',
 			total: '$19',
-			url: '<a href="/product" class="">View <i class="fas fa-external-link-alt"></i></a>'
+			url: '<a href="/product" class="text-tertiary-500">View <i class="fas fa-external-link-alt"></i></a>'
 		},
 		{
 			name: 'Speakers',
 			quantity: '2',
 			price: '$59',
 			total: '$118',
-			url: '<a href="/product" class="">View <i class="fas fa-external-link-alt"></i></a>'
+			url: '<a href="/product" class="text-tertiary-500">View <i class="fas fa-external-link-alt"></i></a>'
 		},
 		{
 			name: 'Delivery',
@@ -97,15 +97,31 @@
 	<div class="flex flex-col xl:flex-row gap-8">
 		<div class="flex-1">
 			<div class="text-2xl font-bold mb-2">Information</div>
-			<Table source={orderInfoTable} element="table shadow-xl" />
+			<Table
+				source={orderInfoTable}
+				element="table shadow-xl"
+				regionBody="bg-primary-700"
+				regionHeadCell="bg-primary-500"
+			/>
 		</div>
 		<div class="flex-1">
 			<div class="text-2xl font-bold mb-2">Shipping</div>
-			<Table source={shippingTable} element="table shadow-xl" />
+			<Table
+				source={shippingTable}
+				element="table shadow-xl"
+				regionBody="bg-primary-700"
+				regionHeadCell="bg-primary-500"
+			/>
 		</div>
 	</div>
 	<div>
 		<div class="text-2xl font-bold mb-2">Product list</div>
-		<Table source={productsTable} element="table shadow-xl" />
+		<Table
+			source={productsTable}
+			element="table shadow-xl"
+			regionBody="bg-primary-700"
+			regionHeadCell="bg-primary-500"
+			regionFootCell="bg-primary-800 font-bold"
+		/>
 	</div>
 </div>
