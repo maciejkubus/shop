@@ -1,3 +1,4 @@
+import { config } from '$lib/config';
 import { mailConfig } from '$lib/mail-config';
 import { createTransport } from 'nodemailer';
 
@@ -16,7 +17,7 @@ class MailerService {
     await transporter.sendMail({
       from: 'noreply@maciejkubus.usermd.net',
       to: "maciekkubus@gmail.com",
-      subject: "Wiadomość z ULTIMATE PORTFOLIO", 
+      subject: "Wiadomość z " + config.siteName, 
       text: content, 
     });
   }
