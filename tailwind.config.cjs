@@ -9,10 +9,12 @@ module.exports = {
 	theme: {
 		extend: {
 			spacing: {
-				'site': 'var(--site-width)'
+				'site': 'var(--site-width)',
+				'halfsite': 'calc(var(--site-width) / 2)',
 			},
 			maxWidth: {
-				'site': 'var(--site-width)'
+				'site': 'var(--site-width)',
+				'halfsite': 'calc(var(--site-width) / 2)',
 			},
 			colors: {
 				'spotify': '#1FDF64',
