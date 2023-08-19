@@ -18,7 +18,7 @@
 	};
 </script>
 
-<div class="w-full flex flex-col max-w-halfsite mx-auto">
+<div class="w-full flex flex-col max-w-halfsite py-32 mx-auto">
 	<div class="text-4xl md:text-6xl font-bold mb-8">Register</div>
 
 	<form on:submit|preventDefault={submit} class="space-y-8">
