@@ -39,7 +39,7 @@
 					</li>
 					<li><a href="/contact" class="text-tertiary-500 before:bg-tertiary-500"> Contact </a></li>
 					<li>
-						<a href="/" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
+						<a href="/account" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
 							Account
 						</a>
 					</li>
@@ -65,7 +65,7 @@
 		</Header>
 	</svelte:fragment>
 	<main class="h-full p-2 md:p-8 xl:p-16">
-		<div class="max-w-site w-full h-full mx-auto flex flex-col gap-16">
+		<div class="max-w-site w-full h-full min-h-screen mx-auto flex flex-col gap-16">
 			<slot />
 		</div>
 	</main>
