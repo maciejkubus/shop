@@ -2,11 +2,17 @@
 	import type { IProduct } from '$lib/interfaces/product.interface';
 
 	export let product: IProduct;
+	export let sale: string | null = null;
 </script>
 
 <a href={product.url} {...$$restProps}>
 	<div class="group">
 		<div class="rounded overflow-hidden relative w-full aspect-[3/4]">
+			{#if sale}
+				<div class="absolute top-2 left-2 variant-filled-error text-xl px-2 py-1 rounded">
+					{sale}
+				</div>
+			{/if}
 			<img
 				src={product.image}
 				alt={product.name}

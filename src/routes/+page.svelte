@@ -78,7 +78,7 @@
 	</Splide>
 </div>
 <div class="flex flex-col xl:flex-row text-tertiary-500 items-start xl:items-center gap-4">
-	<div class="text-4xl drop-shadow-xl font-heading-token">Only available for:</div>
+	<div class="text-4xl drop-shadow-xl font-heading-token">Shopping spree:</div>
 	<div class="text-4xl flex justify-center items-center gap-0.5 font-bold">
 		<Countdown timeLeft={24 * 60 * 60 - 45} let:hours let:minutes let:seconds>
 			<div class="p-2 bg-primary-500 rounded">{hours}</div>
@@ -97,6 +97,7 @@
 			url: '/product',
 			image: '/images/chair.jpg'
 		}}
+		sale="-96%"
 		class="text-tertiary-500 no-anim"
 	/>
 	<ProductTile
@@ -106,6 +107,7 @@
 			url: '/product',
 			image: '/images/lamp.jpg'
 		}}
+		sale="-80%"
 		class="text-tertiary-500 no-anim"
 	/>
 	<ProductTile
@@ -115,6 +117,7 @@
 			url: '/product',
 			image: '/images/lantern.jpg'
 		}}
+		sale="-59%"
 		class="text-tertiary-500 no-anim"
 	/>
 	<ProductTile
@@ -124,6 +127,7 @@
 			url: '/product',
 			image: '/images/clock.jpg'
 		}}
+		sale="-59%"
 		class="text-tertiary-500 no-anim"
 	/>
 </div>
@@ -177,35 +181,46 @@
 		</ProductCard>
 	</div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 py-8">
-	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
-		<div class="text-9xl">
-			<i class="fas fa-globe" />
-		</div>
-		<div class="text-3xl font-heading-token pt-6 pb-1">Worldwide</div>
-		<div class="text-tertiary-600">Get free shipping over $65.</div>
-	</div>
-	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
-		<div class="text-9xl">
-			<i class="fas fa-box-open" />
-		</div>
-		<div class="text-3xl font-heading-token pt-6 pb-1">Returns</div>
-		<div class="text-tertiary-600">Within 30 days for an exchange.</div>
-	</div>
-	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
-		<div class="text-9xl">
-			<i class="fas fa-life-ring" />
-		</div>
-		<div class="text-3xl font-heading-token pt-6 pb-1">Support</div>
-		<div class="text-tertiary-600">Top notch customer service.</div>
-	</div>
-	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
-		<div class="text-9xl">
-			<i class="fas fa-credit-card" />
-		</div>
-		<div class="text-3xl font-heading-token pt-6 pb-1">Payments</div>
-		<div class="text-tertiary-600">Flexible payment made easy.</div>
-	</div>
+<div class="flex flex-col xl:flex-row text-tertiary-500 items-start xl:items-center gap-4">
+	<div class="text-4xl flex justify-center items-center gap-0.5 font-bold">Best sellers:</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+	<ProductTile
+		product={{
+			name: 'Fancy chair',
+			price: '$189',
+			url: '/product',
+			image: '/images/chair.jpg'
+		}}
+		class="text-tertiary-500 no-anim"
+	/>
+	<ProductTile
+		product={{
+			name: 'Elegant lamp',
+			price: '$299',
+			url: '/product',
+			image: '/images/lamp.jpg'
+		}}
+		class="text-tertiary-500 no-anim"
+	/>
+	<ProductTile
+		product={{
+			name: 'Lantern',
+			price: '$99',
+			url: '/product',
+			image: '/images/lantern.jpg'
+		}}
+		class="text-tertiary-500 no-anim"
+	/>
+	<ProductTile
+		product={{
+			name: 'Simple clock',
+			price: '$19',
+			url: '/product',
+			image: '/images/clock.jpg'
+		}}
+		class="text-tertiary-500 no-anim"
+	/>
 </div>
 <div class="flex gap-8 flex-col md:flex-row">
 	<div class="w-full md:w-2/3 bg-secondary">
@@ -244,6 +259,36 @@
 			<div class="w-full h-full flex justify-end items-end">$99</div>
 			<div slot="footer" class="text-right">Just gift</div>
 		</ProductCard>
+	</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 py-8">
+	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+		<div class="text-9xl">
+			<i class="fas fa-globe" />
+		</div>
+		<div class="text-3xl font-heading-token pt-6 pb-1">Worldwide</div>
+		<div class="text-tertiary-600">Get free shipping over $65.</div>
+	</div>
+	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+		<div class="text-9xl">
+			<i class="fas fa-box-open" />
+		</div>
+		<div class="text-3xl font-heading-token pt-6 pb-1">Returns</div>
+		<div class="text-tertiary-600">Within 30 days for an exchange.</div>
+	</div>
+	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+		<div class="text-9xl">
+			<i class="fas fa-life-ring" />
+		</div>
+		<div class="text-3xl font-heading-token pt-6 pb-1">Support</div>
+		<div class="text-tertiary-600">Top notch customer service.</div>
+	</div>
+	<div class="flex flex-col justify-center items-center text-center py-8 md:p-8">
+		<div class="text-9xl">
+			<i class="fas fa-credit-card" />
+		</div>
+		<div class="text-3xl font-heading-token pt-6 pb-1">Payments</div>
+		<div class="text-tertiary-600">Flexible payment made easy.</div>
 	</div>
 </div>
 <div
