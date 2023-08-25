@@ -77,7 +77,7 @@
 		</div>
 	</Splide>
 </div>
-<div class="flex text-tertiary-500 items-center gap-4">
+<div class="flex flex-col xl:flex-row text-tertiary-500 items-start xl:items-center gap-4">
 	<div class="text-4xl drop-shadow-xl font-heading-token">Only available for:</div>
 	<div class="text-4xl flex justify-center items-center gap-0.5 font-bold">
 		<Countdown timeLeft={24 * 60 * 60 - 45} let:hours let:minutes let:seconds>

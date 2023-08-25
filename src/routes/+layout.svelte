@@ -182,14 +182,16 @@
 				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="bottom">
-				Copyrigth &copy; 2023 {config.siteName} - Created By
-				<a
-					href="https://maciejkubus.usermd.net/"
-					target="_blank"
-					class="text-tertiary-500 hover:text-tertiary-600 ml-1"
-				>
-					Maciej Kubus
-				</a>
+				<div>
+					<span>Copyrigth &copy; 2023 {config.siteName} - Created By</span>
+					<a
+						href="https://maciejkubus.usermd.net/"
+						target="_blank"
+						class="text-tertiary-500 hover:text-tertiary-600 ml-1"
+					>
+						Maciej Kubus
+					</a>
+				</div>
 			</svelte:fragment>
 		</Footer>
 	</svelte:fragment>

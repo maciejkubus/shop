@@ -5,7 +5,7 @@
 <div class="text-4xl md:text-6xl font-bold">Contact</div>
 
 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
-	<div class="w-1/2 text-2xl flex flex-col gap-4">
+	<div class="w-full xl:w-1/2 text-2xl flex flex-col gap-4">
 		<div class="text-4xl font-bold">Information</div>
 		<p class="text-base">
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptatibus eveniet numquam.
@@ -39,7 +39,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="w-1/2">
+	<div class="w-full xl:w-1/2">
 		<ContactForm />
 	</div>
 </div>

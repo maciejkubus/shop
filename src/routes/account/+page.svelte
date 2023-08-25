@@ -12,7 +12,7 @@
 <div class="text-4xl md:text-6xl font-bold">My Account</div>
 
 <div class="flex flex-col md:flex-row gap-8">
-	<div class="w-1/4 text-2xl flex flex-col gap-4">
+	<div class="w-full xl:w-1/4 text-2xl flex flex-col gap-4">
 		<ul class="flex flex-col gap-4 text-2xl">
 			<li>
 				<a
@@ -76,7 +76,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="w-3/4">
+	<div class="w-full xl:w-3/4">
 		{#if tab === 'dashboard'}
 			<AccountDashboard on:changeTab={(e) => (tab = e.detail)} />
 		{:else if tab === 'orders'}
