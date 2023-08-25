@@ -115,3 +115,75 @@
 		<span slot="position">Executive nun</span>
 	</WorkerCard>
 </div>
+
+<div class="flex flex-col xl:flex-row text-tertiary-500 items-start xl:items-center gap-4">
+	<div class="text-6xl flex justify-center items-center gap-0.5 font-bold">Our values</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-8 py-8">
+	<div class="flex items-end">
+		<div class="w-1/4">
+			<span class="text-9xl leading-none tracking-normal">1</span>
+		</div>
+		<div class="w-3/4">
+			<div class="text-2xl font-bold mb-2">Lorem Ipsum</div>
+			<div class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.
+			</div>
+		</div>
+	</div>
+	<div class="flex items-end">
+		<div class="w-1/4">
+			<span class="text-9xl leading-none tracking-normal">2</span>
+		</div>
+		<div class="w-3/4">
+			<div class="text-2xl font-bold mb-2">Lorem Ipsum</div>
+			<div class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.
+			</div>
+		</div>
+	</div>
+	<div class="flex items-end">
+		<div class="w-1/4">
+			<span class="text-9xl leading-none tracking-normal">3</span>
+		</div>
+		<div class="w-3/4">
+			<div class="text-2xl font-bold mb-2">Lorem Ipsum</div>
+			<div class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.
+			</div>
+		</div>
+	</div>
+	<div class="flex items-end">
+		<div class="w-1/4">
+			<span class="text-9xl leading-none tracking-normal">4</span>
+		</div>
+		<div class="w-3/4">
+			<div class="text-2xl font-bold mb-2">Lorem Ipsum</div>
+			<div class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.
+			</div>
+		</div>
+	</div>
+	<div class="flex items-end">
+		<div class="w-1/4">
+			<span class="text-9xl leading-none tracking-normal">5</span>
+		</div>
+		<div class="w-3/4">
+			<div class="text-2xl font-bold mb-2">Lorem Ipsum</div>
+			<div class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.
+			</div>
+		</div>
+	</div>
+	<div class="flex items-end">
+		<div class="w-1/4">
+			<span class="text-9xl leading-none tracking-normal">6</span>
+		</div>
+		<div class="w-3/4">
+			<div class="text-2xl font-bold mb-2">Lorem Ipsum</div>
+			<div class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.
+			</div>
+		</div>
+	</div>
+</div>
