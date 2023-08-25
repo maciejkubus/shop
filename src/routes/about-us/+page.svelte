@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Accordion from '$lib/components/accordion/Accordion.svelte';
 	import WorkerCard from '$lib/components/worker-card/WorkerCard.svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
 </script>
@@ -186,4 +187,29 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="flex flex-col xl:flex-row text-tertiary-500 items-start xl:items-center gap-4">
+	<div class="text-6xl flex justify-center items-center gap-0.5 font-bold">Join us</div>
+</div>
+<div>
+	<Accordion
+		items={[
+			{
+				title: 'Full-stack developer',
+				text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.'
+			},
+			{
+				title: 'Front-end developer',
+				text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.'
+			},
+			{
+				title: 'Back-end developer',
+				text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.'
+			},
+			{
+				title: 'UI/UX designer',
+				text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sapiente.'
+			}
+		]}
+	/>
 </div>
