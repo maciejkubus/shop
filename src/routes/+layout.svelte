@@ -37,6 +37,11 @@
 						<a href="/products" class="text-tertiary-500 before:bg-tertiary-500">Products</a>
 					</li>
 					<li>
+						<a href="/about-us" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
+							About us
+						</a>
+					</li>
+					<li>
 						<a href="/buy-again" class="text-tertiary-500 before:bg-tertiary-500 whitespace-nowrap">
 							Buy again
 						</a>
