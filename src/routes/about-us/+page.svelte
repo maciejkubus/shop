@@ -1,4 +1,6 @@
 <script lang="ts">
+	import WorkerCard from '$lib/components/worker-card/WorkerCard.svelte';
+	import { Avatar } from '@skeletonlabs/skeleton';
 </script>
 
 <div class="flex flex-col-reverse xl:flex-row gap-16">
@@ -66,4 +68,50 @@
 		</p>
 		<a href="/contact/" class="btn variant-filled-primary font-bold text-lg"> Contact us </a>
 	</div>
+</div>
+
+<div class="flex flex-col xl:flex-row text-tertiary-500 items-start xl:items-center gap-4">
+	<div class="text-6xl flex justify-center items-center gap-0.5 font-bold">Our amazing team</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 py-8">
+	<WorkerCard>
+		<img
+			slot="image"
+			src="/images/characters/9.jpg"
+			alt="Aoi Kitsune"
+			class="flex aspect-[3/4] object-cover object-center"
+		/>
+		<span slot="fullname">Aoi Kitsune</span>
+		<span slot="position">Samurai</span>
+	</WorkerCard>
+	<WorkerCard>
+		<img
+			slot="image"
+			src="/images/characters/13.jpg"
+			alt="Hoshikagawa"
+			class="flex aspect-[3/4] object-cover object-center"
+		/>
+		<span slot="fullname">Hoshikagawa</span>
+		<span slot="position">Doctor</span>
+	</WorkerCard>
+	<WorkerCard>
+		<img
+			slot="image"
+			src="/images/characters/6.jpg"
+			alt="Jinx"
+			class="flex aspect-[3/4] object-cover object-center"
+		/>
+		<span slot="fullname">Jinx</span>
+		<span slot="position">Street kid</span>
+	</WorkerCard>
+	<WorkerCard>
+		<img
+			slot="image"
+			src="/images/characters/14.jpg"
+			alt="Seinaru shōjo"
+			class="flex aspect-[3/4] object-cover object-center"
+		/>
+		<span slot="fullname">Seinaru shōjo</span>
+		<span slot="position">Executive nun</span>
+	</WorkerCard>
 </div>
