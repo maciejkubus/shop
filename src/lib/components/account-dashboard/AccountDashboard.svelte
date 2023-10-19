@@ -5,7 +5,6 @@
 	const dispatch = createEventDispatcher();
 </script>
 
-<div class="text-2xl md:text-6xl font-bold mb-8">Dashboard</div>
 <div class="space-y-8">
 	<div class="flex gap-4 items-center">
 		<Avatar src="/images/characters/6.jpg" width="w-32" rounded="rounded-full" />
